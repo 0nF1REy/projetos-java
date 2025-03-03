@@ -1,0 +1,30 @@
+# Arquivos compilados
+*.class
+*.jar
+*.war
+*.ear
+
+# Diretórios de build
+/build/
+/target/
+/out/
+
+# Arquivos de configuração da IDE
+.idea/
+.vscode/
+*.iml
+
+# Dependências do Maven
+/.m2/
+
+# Arquivos de log
+*.log
+
+# Arquivos temporários
+*.tmp
+*.swp
+*.bak
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
