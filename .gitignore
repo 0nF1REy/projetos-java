@@ -1,5 +1,4 @@
 # Arquivos compilados
-*.class
 *.jar
 *.war
 *.ear
