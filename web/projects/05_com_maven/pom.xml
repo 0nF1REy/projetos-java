@@ -9,8 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
     </properties>
 
     <dependencies>
@@ -38,6 +38,7 @@
             </plugin>
 
             <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
                 <version>3.3.0</version> <!-- Use the latest version -->
                 <configuration>
@@ -49,9 +50,7 @@
                             <mainClass>br.com.alanryan.App</mainClass>
                         </manifest>
                     </archive>
-                    <appendAssemblyId>false</appendAssemblyId>  <!-- Recommended:  Don't add assembly ID to the filename -->
-                    <finalName>${project.artifactId}-${project.version}</finalName> <!-- Keeps the name consistent -->
-
+                    <appendAssemblyId>false</appendAssemblyId> <!-- Recommended:  Don't add assembly ID to the filename -->
                 </configuration>
                 <executions>
                     <execution>
