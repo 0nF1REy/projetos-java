@@ -9,7 +9,7 @@ import java.time.LocalTime;
     Ela permite manipular e exibir apenas o horário (hora, minuto, segundo e nanosegundos).
 */
 
-public class Hello_world {
+public class HelloWorld {
     public static void main(String[] args) {
 
         // Variáveis
