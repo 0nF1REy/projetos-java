@@ -1,19 +1,34 @@
-# Arquivos compilados
+# Arquivos compilados Java
+*.class
+
+# Arquivos empacotados (WAR, EAR, JAR)
 *.war
 *.ear
+*.jar
+!lib/*.jar
 
 # Diretórios de build
 /build/
 /target/
 /out/
+/bin/
 
 # Arquivos de configuração da IDE
 .idea/
 .vscode/
 *.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
 
 # Dependências do Maven
 /.m2/
+
+# Dependências do Gradle
+/.gradle/
+/build/
 
 # Arquivos de log
 *.log
@@ -21,8 +36,18 @@
 # Arquivos temporários
 *.tmp
 *.swp
+*.swo
 *.bak
+*.orig
 
 # Arquivos do sistema operacional
 .DS_Store
 Thumbs.db
+
+# Arquivos do NetBeans
+/nbproject/private/
+/dist/
+
+# Arquivos gerados por testes
+/test-output/
+/reports/

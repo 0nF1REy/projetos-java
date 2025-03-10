@@ -15,5 +15,8 @@ public class Hello_world {
         System.out.println("===========");
         System.out.println(hello + "," + " " + world + "!"); 
         System.out.println("===========");
+        
+        System.out.println("A versão do Java é: " + System.getProperty("java.version"));
+
     }
 }
