@@ -1,8 +1,12 @@
+import java.time.LocalTime;
+
 /* 
     Entrypoint
     Main
     Classe: Uma estrutura que define algum conceito do mundo real
     Boilerplate java
+    A classe LocalTime foi importada para trabalhar com tempo, sem a necessidade de uma data completa. 
+    Ela permite manipular e exibir apenas o horário (hora, minuto, segundo e nanosegundos).
 */
 
 public class Hello_world {
@@ -16,7 +20,10 @@ public class Hello_world {
         System.out.println(hello + "," + " " + world + "!"); 
         System.out.println("===========");
         
-        System.out.println("A versão do Java é: " + System.getProperty("java.version"));
-
+        System.out.println("A versão do atual do Java é: " + System.getProperty("java.version"));
+        
+        LocalTime agora = LocalTime.now();
+        System.out.println("Hora atual: " + agora);
     }
 }
+
