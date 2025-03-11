@@ -1,13 +1,21 @@
+import java.util.Scanner;
+
 public class Condicional {
     public static void main(String[] args) {
-        
+
         // ===========
-        //  Variáveis
+        //  Criar Scanner
         // ===========
-        int idade = 15;
+        Scanner scanner = new Scanner(System.in);
+
+        // ===========
+        //  Solicitar Idade
+        // ===========
+        System.out.print("Digite sua idade: ");
+        int idade = scanner.nextInt();
 
         // ------------
-        System.out.println("===========");
+        System.out.println("=======================");
 
         // =============
         //  Condicional
@@ -17,6 +25,9 @@ public class Condicional {
         } else {
             System.out.println("Esse filme é apenas para maiores, criança!");
         }
-        System.out.println("===========");
+        System.out.println("=======================");
+
+        // Fechar scanner
+        scanner.close();
     }
 }
