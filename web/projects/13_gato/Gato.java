@@ -27,10 +27,13 @@ class Gato {
         // Criando um objeto Gato
         Gato gato1 = new Gato("Bichano", "Siamês", 3);
 
+        System.out.println("===========");
         // Chamando o método miar
         gato1.miar();
+        System.out.println("- - - - - -");
 
         // Exibindo as informações do gato
         gato1.mostrarInfo();
+        System.out.println("===========");
     }
 }
