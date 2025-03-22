@@ -1,3 +1,22 @@
+# Diretórios e arquivos gerados automaticamente pelo NetBeans
+nbproject/private/
+build/
+dist/
+
+# Arquivos específicos do NetBeans que não precisam ser versionados
+nbproject/genfiles.properties
+nbproject/build-impl.xml
+
+# Arquivos de metadados do sistema
+*.swp
+*.swo
+
+# Arquivos compilados
+*.class
+
+# Arquivo de manifesto gerado
+manifest.mf
+
 # Arquivos compilados Java
 *.class
 
@@ -45,7 +64,7 @@
 Thumbs.db
 
 # Arquivos do NetBeans
-/nbproject/private/
+/nbproject/
 /dist/
 
 # Arquivos gerados por testes
