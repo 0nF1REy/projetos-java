@@ -1,4 +1,5 @@
 import java.time.LocalTime;
+import java.time.LocalDate;
 
 /* 
     Entrypoint
@@ -20,20 +21,37 @@ public class HelloWorld {
          *  a variável foi declarada..
          */
 
-        // Variáveis
+        // Declaração de variáveis
         String hello = "Olá";
         String world = "Mundo";
-        
+        LocalDate dataAtual = LocalDate.now();
+
+        // Instanciando a classe TimeDisplay
+        TimeDisplay timeDisplay = new TimeDisplay();
+
+        // Exibindo as mensagens de saudação e dados
         System.out.println("===========");
-        System.out.println(hello + "," + " " + world + "!"); 
+        System.out.println(hello + "," + " " + world + "!");
+
         System.out.println("===========");
-        
-        System.out.println("A versão do atual do Java é: " + System.getProperty("java.version"));
-        
-        LocalTime agora = LocalTime.now();
+        System.out.println("Versão do Java em uso: " + System.getProperty("java.version"));
         System.out.println("===========");
-        System.out.println("Hora atual: " + agora);
+
+        // Exibindo a data atual
+        System.out.println("Data atual: " + dataAtual);
         System.out.println("===========");
+
+        // Exibindo a hora atual
+        timeDisplay.displayTime();
+    }
+
+    // Classe interna para exibir a hora atual
+    static class TimeDisplay {
+        public void displayTime() {
+            LocalTime horaAtual = LocalTime.now();
+
+            System.out.println("Hora atual: " + horaAtual);
+            System.out.println("===========");
+        }
     }
 }
-
