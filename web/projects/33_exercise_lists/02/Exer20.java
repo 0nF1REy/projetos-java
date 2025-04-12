@@ -47,7 +47,7 @@ public class Exer20 {
         } else if (cont == 3 || cont == 4) {
             System.out.println("Cúmplice!");
         } else if (cont == 5) {
-            System.out.println("Assasino!");
+            System.out.println("Assassino!");
         } else if (cont == 0) {
             System.out.println("Inocente!");
         }
