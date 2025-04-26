@@ -1,35 +1,32 @@
 package animais;
 
-public class Gato {
+// extends = herança
+public class Gato extends Animal {
 
-    private String nome;
-    private String tutor;
-    private String raca;
+    private boolean gostaEscalar;
 
-    // get
-    public String getNome() {
+    // A assinatura do método inclui o nome, o tipo de retorno e os parâmetros (com seus tipos).
 
+    // Método construtor
+    public Gato(String nome, String tutor, String raca) {
+        super(nome, tutor, raca);
     }
 
-    public String getTutor() {
-        return tutor;
+    public Gato() {
+        super("", "", "");
     }
 
-    public String getRaca() {
-        return raca;
+    // Getter
+    public boolean isGostaEscalar() {
+        return gostaEscalar;
     }
 
-    // set
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setGostaEscalar(boolean gostaEscalar) {
+        this.gostaEscalar = gostaEscalar;
     }
 
-    public void setTutor(String tutor) {
-        this.tutor = tutor;
-    }
-
-    public void setRaca(String raca) {
-        this.raca = raca;
+    public void miar() {
+        System.out.println("O gato está miando");
     }
 
     public void comer() {
@@ -37,6 +34,7 @@ public class Gato {
     }
 
     public void emitirSom() {
-        System.out.println("O gato está miando");
+        System.out.println("O gato está emitindo som");
     }
+
 }

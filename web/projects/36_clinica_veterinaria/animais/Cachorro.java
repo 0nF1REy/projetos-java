@@ -1,43 +1,43 @@
 package animais;
 
-public class Cachorro {
+public class Cachorro extends Animal {
 
-    private String nome;
-    private String tutor;
-    private String raca;
+//    ============== Antes da refatoração ==============
+//    private String nome;
+//    private String tutor;
+//    private String raca;
 
-    // get
-    public String getNome() {
 
+    private boolean ehAdestrado;
+
+    // Construtor com 4 parâmetros
+    public Cachorro(String nome, String tutor, String raca, boolean ehAdestrado) {
+        super(nome, tutor, raca);
+        this.ehAdestrado = ehAdestrado;
     }
 
-    public String getTutor() {
-        return tutor;
+    // Construtor sem parâmetros
+    public Cachorro() {
+        super("", "", "");
     }
 
-    public String getRaca() {
-        return raca;
+    public boolean isEhAdestrado() {
+        return ehAdestrado;
     }
 
-
-    // set
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setEhAdestrado(boolean ehAdestrado) {
+        this.ehAdestrado = ehAdestrado;
     }
 
-    public void setTutor(String tutor) {
-        this.tutor = tutor;
-    }
-
-    public void setRaca(String raca) {
-        this.raca = raca;
+    public void latir() {
+        System.out.println("O cachorro está latindo");
     }
 
     public void comer() {
-        System.out.println("O gato está comendo");
+        System.out.println("O cachorro está comendo");
     }
 
     public void emitirSom() {
-        System.out.println("O gato está miando");
+        System.out.println("O cachorro está emitindo som");
     }
 }
