@@ -1,0 +1,4 @@
+Instrução de execução do projeto
+
+Compilação: javac */*.java
+Execução: java diretorio.Classe
