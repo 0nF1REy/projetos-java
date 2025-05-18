@@ -1,0 +1,8 @@
+services:
+  java-app:
+    image: eclipse-temurin:21
+    container_name: java_lesson_app
+    volumes:
+      - .:/usr/src/app
+    working_dir: /usr/src/app
+    command: tail -f /dev/null

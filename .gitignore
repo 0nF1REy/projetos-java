@@ -70,3 +70,6 @@ Thumbs.db
 # Arquivos gerados por testes
 /test-output/
 /reports/
+
+# Arquivo de variáveis de ambiente
+.env
