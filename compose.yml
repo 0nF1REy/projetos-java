@@ -1,6 +1,11 @@
 services:
   java-app:
-    image: eclipse-temurin:21
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        GIT_USERNAME: ${GIT_USERNAME}
+        GIT_EMAIL: ${GIT_EMAIL}
     container_name: java_lesson_app
     volumes:
       - .:/usr/src/app
