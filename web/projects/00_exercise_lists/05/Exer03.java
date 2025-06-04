@@ -1,31 +1,42 @@
 import java.util.Scanner;
 
 public class Exer03 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
 
-        int[] vetorA = new int[15];
-        int[] vetorB = new int[vetorA.length];
+        int[][] numeros = new int[3][3];
 
-        for (int i=0; i<vetorA.length; i++) {
-            System.out.println("Entre com o valor da posição: " + i);
-            vetorA[i] = scan.nextInt();
+        for (int i=0; i<numeros.length; i++) {
+            for (int j=0; j<numeros[i].length; j++) {
 
-            vetorB[i] = vetorA[i] * vetorA[i];
+                System.out.println("Entre com o valor da posição [" + i + "," + j + "]");
+                numeros[i][j] = scan.nextInt();
+            }
         }
 
-        System.out.print("Vetor A = ");
-        for (int i=0; i<vetorA.length; i++) {
-            System.out.print(vetorA[i] + " ");
-        }
-        System.out.println();
+        int qtdPares = 0;
+        int qtdImpares = 0;
 
-        System.out.print("Vetor B = ");
-        for (int i=0; i<vetorB.length; i++) {
-            System.out.print(vetorB[i] + " ");
-        }
-        System.out.println();
+        for (int i=0; i<numeros.length; i++) {
+            for (int j=0; j<numeros[i].length; j++) {
 
+                if (numeros[i][j] % 2 == 0) {
+                    qtdPares++;
+                } else {
+                    qtdImpares++;
+                }
+            }
+        }
+
+        for (int i = 0; i < numeros.length; i++) {
+            for (int j = 0; j < numeros[i].length; j++) {
+                System.out.print(numeros[i][j] + " ");
+            }
+            System.out.println();
+        }
+
+        System.out.println("Pares = " + qtdPares);
+        System.out.println("Ímpares = " + qtdImpares);
     }
 }
