@@ -7,7 +7,7 @@ public class Carro {
     double capCombustivel;
     double consumoCombustivel;
 
-    // Metódo simples
+    // Método simples
     void exibirAutonomia() {
             System.out.println("A autonomia do carro é: " + capCombustivel * consumoCombustivel + " km");
     }
