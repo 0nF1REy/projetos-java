@@ -24,5 +24,9 @@ public class TesteCarro {
         System.out.println(fusca.modelo);
 
         van.exibirAutonomia();
+
+        double autonomia = van.obterAutonomia();
+        System.out.println("A autonomia do carro é: " + autonomia);
+        System.out.println("A autonomia do carro é: " + van.obterAutonomia());
     }
 }
