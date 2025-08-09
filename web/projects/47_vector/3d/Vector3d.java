@@ -8,7 +8,7 @@ public class Vector3d {
         this.z = z;
     }
 
-    // Calcula o produto interno (dot product) entre este vetor e outro vetor
+    // Calcula o produto interno (dot product)
     public float dot(Vector3d other) {
         return this.x * other.x + this.y * other.y + this.z * other.z;
     }
@@ -16,6 +16,14 @@ public class Vector3d {
     // Calcula a magnitude (comprimento) do vetor
     public float magnitude() {
         return (float) Math.sqrt(x * x + y * y + z * z);
+    }
+
+    // Calcula o produto externo (cross product)
+    public Vector3d cross(Vector3d other) {
+        float cx = (this.y * other.z) - (other.y * this.z);
+        float cy = (this.z * other.x) - (other.z * this.x);
+        float cz = (this.x * other.y) - (other.x * this.y);
+        return new Vector3d(cx, cy, cz);
     }
 
     @Override

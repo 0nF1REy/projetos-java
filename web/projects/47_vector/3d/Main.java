@@ -24,6 +24,10 @@ public class Main {
         System.out.println("Magnitude de V1: " + v1.magnitude());
         System.out.println("Magnitude de V2: " + v2.magnitude());
 
+        // Produto vetorial
+        Vector3d crossProduct = v1.cross(v2);
+        System.out.println("Produto vetorial: " + crossProduct);
+
         sc.close();
     }
 }
