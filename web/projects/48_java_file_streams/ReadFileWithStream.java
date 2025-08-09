@@ -1,5 +1,7 @@
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
 import java.io.IOException;
 
 public class ReadFileWithStream {
@@ -13,11 +15,13 @@ public class ReadFileWithStream {
             return;
         }
 
-        try (FileInputStream fis = new FileInputStream(arquivo)) {
-            int byteLido;
+        try (InputStreamReader isr = new InputStreamReader(new FileInputStream(arquivo), "UTF-8");
+             BufferedReader br = new BufferedReader(isr)) {
+
             System.out.println("Conteúdo do arquivo:");
-            while ((byteLido = fis.read()) != -1) {
-                System.out.print((char) byteLido);
+            String linha;
+            while ((linha = br.readLine()) != null) {
+                System.out.println(linha);
             }
         } catch (IOException e) {
             System.out.println("Erro ao ler o arquivo: " + e.getMessage());
