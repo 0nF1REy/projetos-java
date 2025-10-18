@@ -64,22 +64,24 @@ projetos-java/
 ### Execução Local
 
 1. **Clone o repositório:**
+
    ```bash
    git clone https://github.com/0nF1REy/projetos-java.git
    cd projetos-java
    ```
 
 2. **Compile e execute um projeto específico:**
+
    ```bash
    # Para projetos simples (sem Maven)
    cd web/projects/01_hello_world
    javac HelloWorld.java
    java HelloWorld
-   
+
    # Para projetos com Maven
    cd web/projects/05_com_maven
    mvn compile exec:java
-   
+
    # Para projetos Spring Boot
    cd web/projects/26_first_spring_app
    mvn spring-boot:run
@@ -88,11 +90,13 @@ projetos-java/
 ### Execução com Docker
 
 1. **Execute o ambiente Docker:**
+
    ```bash
    docker-compose up -d
    ```
 
 2. **Acesse o container:**
+
    ```bash
    docker exec -it projetos_java bash
    ```
@@ -107,6 +111,7 @@ projetos-java/
 ## 📚 Projetos Incluídos
 
 ### Fundamentos Básicos (01-15)
+
 - **01_hello_world**: Primeiro programa Java com conceitos básicos
 - **02_loop**: Estruturas de repetição (for, while)
 - **03_condicional**: Estruturas condicionais (if, else, switch)
@@ -114,6 +119,7 @@ projetos-java/
 - **15_primitive_types**: Tipos primitivos em Java
 
 ### Orientação a Objetos (13-21)
+
 - **13_gato**: Exemplo básico de classe e objetos
 - **14_package**: Organização em pacotes
 - **17_polymorphism_cafe**: Demonstração de polimorfismo
@@ -121,6 +127,7 @@ projetos-java/
 - **21_static_heroes_class_object**: Classes e objetos estáticos
 
 ### Estruturas de Dados (20, 27, 41-43)
+
 - **20_arrays_basics**: Fundamentos de arrays
 - **27_fixed_capacity_array**: Arrays de capacidade fixa
 - **41_arrays**: Manipulação avançada de arrays
@@ -128,17 +135,20 @@ projetos-java/
 - **43_for_each**: Loop for-each
 
 ### Programação Avançada (08-11)
+
 - **08_array_list_stream**: ArrayList e Streams
 - **09_concurrent_task_coordinator**: Coordenação de tarefas concorrentes
 - **10_asynchronous_pokemon_ability_fetcher**: Programação assíncrona
 - **11_multi_thread_musician_performance**: Multithreading
 
 ### Frameworks e Ferramentas
+
 - **05_com_maven**: Projeto usando Maven
 - **06_spring_maven_demo**: Demonstração Spring com Maven
 - **26_first_spring_app**: Primeira aplicação Spring Boot
 
 ### Projetos Práticos
+
 - **16_calculator_with_wrappers**: Calculadora com classes wrapper
 - **32_greengrocer**: Sistema de hortifrúti
 - **36_clinica_veterinaria**: Sistema de clínica veterinária
@@ -164,6 +174,7 @@ O projeto inclui configuração Docker para facilitar o desenvolvimento:
 ### Variáveis de Ambiente Docker
 
 Configure as seguintes variáveis de ambiente para o Docker:
+
 ```bash
 export GIT_USERNAME="Seu Nome"
 export GIT_EMAIL="seu.email@exemplo.com"
@@ -178,6 +189,7 @@ export GIT_EMAIL="seu.email@exemplo.com"
 5. **Experimente frameworks**: Projetos 05, 06, 26
 
 Cada projeto contém:
+
 - Código fonte comentado
 - Exemplos práticos
 - Demonstração de conceitos específicos
