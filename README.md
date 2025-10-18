@@ -42,14 +42,18 @@ Este repositório serve como um guia prático de aprendizado Java, organizado de
 
 ```
 projetos-java/
-├── compose.yml          # Configuração Docker Compose
-├── Dockerfile           # Imagem Docker para ambiente de desenvolvimento
-├── LICENSE             # Licença MIT
-├── java_lesson/        # Materiais de estudo
-│   └── palavras-reservadas-java.png
-└── web/
-    └── projects/       # Projetos organizados numericamente
-        └── ...
+├── compose.yml
+├── Dockerfile
+├── LICENSE
+├── public/
+│   └── assets/
+│       └── images/
+├── src/
+│   ├── 00_exercise_lists/
+│   ├── 01_hello_world/
+│   ├── 02_loop/
+│   ├── ...
+│   └── 49_copy_array_example/
 ```
 
 ## 🛠️ Pré-requisitos
@@ -74,16 +78,16 @@ projetos-java/
 
    ```bash
    # Para projetos simples (sem Maven)
-   cd web/projects/01_hello_world
+   cd src/01_hello_world
    javac HelloWorld.java
    java HelloWorld
 
    # Para projetos com Maven
-   cd web/projects/05_com_maven
+   cd src/05_com_maven
    mvn compile exec:java
 
    # Para projetos Spring Boot
-   cd web/projects/26_first_spring_app
+   cd src/26_first_spring_app
    mvn spring-boot:run
    ```
 
@@ -103,7 +107,7 @@ projetos-java/
 
 3. **Execute os projetos dentro do container:**
    ```bash
-   cd web/projects/01_hello_world
+   cd src/01_hello_world
    javac HelloWorld.java
    java HelloWorld
    ```
