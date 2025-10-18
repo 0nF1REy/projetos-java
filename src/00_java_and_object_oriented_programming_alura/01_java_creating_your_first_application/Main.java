@@ -44,7 +44,7 @@ public class Main {
         s(classification);
     }
 
-    // MÉTODOS UTILITÁRIOS ^-^
+    // MÉTODOS UTILITÁRIOS
 
     // Object -> Aceita qualquer tipo de dado
     static void s(Object text) {
