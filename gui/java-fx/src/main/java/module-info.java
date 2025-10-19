@@ -13,4 +13,6 @@ module br.com.alanryan.javafx {
 
     opens br.com.alanryan.javafx to javafx.fxml;
     exports br.com.alanryan.javafx;
+    exports br.com.alanryan.javafx.hello_scene_builder;
+    opens br.com.alanryan.javafx.hello_scene_builder to javafx.fxml;
 }

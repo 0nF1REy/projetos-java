@@ -11,7 +11,7 @@ public class HelloApplication extends Application {
         if (args.length > 0) {
             classNameToLoad = args[0];
         } else {
-            classNameToLoad = "br.com.alanryan.javafx.hello_fx.HelloFx";
+            classNameToLoad = "br.com.alanryan.javafx.hello_scene_builder.HelloSceneBuilder";
         }
 
         launch(args);
