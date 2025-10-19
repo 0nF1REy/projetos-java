@@ -1,7 +1,7 @@
 import java.io.File;
 import java.text.SimpleDateFormat;
 
-public class Main {
+public class ListFolders {
     public static void main(String[] args) {
 
         // Diretório atual (onde o programa está sendo executado)

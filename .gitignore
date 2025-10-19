@@ -29,7 +29,8 @@ manifest.mf
 # Diretórios de build
 /build/
 /target/
-/out/
+out/
+**/out/
 /bin/
 
 # Arquivos de configuração da IDE
