@@ -3,16 +3,14 @@ package br.com.alanryan.javafx.hello_fx;
 import javafx.application.Application;
 import javafx.scene.Group;
 import javafx.scene.Scene;
-import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCombination;
-import javafx.scene.layout.StackPane;
 import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class HelloFX extends Application {
+public class HelloFx extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
