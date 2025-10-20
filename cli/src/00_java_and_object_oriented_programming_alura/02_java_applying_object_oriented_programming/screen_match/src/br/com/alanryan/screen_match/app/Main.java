@@ -1,5 +1,6 @@
 package br.com.alanryan.screen_match.app;
 
+import br.com.alanryan.screen_match.calculations.TimeCalculator;
 import br.com.alanryan.screen_match.models.Movie;
 import br.com.alanryan.screen_match.models.Serie;
 import br.com.alanryan.screen_match.utils.Utils;
@@ -27,5 +28,16 @@ public class Main {
         lost.setEpisodesPerSeason(10);
         lost.setMinutesPerEpisode(50);
         Utils.print("Duração para maratonar Lost: " + lost.getDurationInMinutes());
+
+        Movie otherMovie = new Movie();
+        otherMovie.setTitle("Avatar");
+        otherMovie.setReleaseYear(2023);
+        otherMovie.setDurationInMinutes(200);
+
+        TimeCalculator calculator = new TimeCalculator();
+        calculator.includes(myMovie);
+        calculator.includes(otherMovie);
+        calculator.includes(lost);
+        Utils.print(calculator.getTotalTime());
     }
 }
