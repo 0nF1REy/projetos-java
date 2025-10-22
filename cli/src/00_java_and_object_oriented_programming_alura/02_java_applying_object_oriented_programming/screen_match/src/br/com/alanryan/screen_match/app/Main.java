@@ -1,6 +1,8 @@
 package br.com.alanryan.screen_match.app;
 
+import br.com.alanryan.screen_match.calculations.RecommendationFilter;
 import br.com.alanryan.screen_match.calculations.TimeCalculator;
+import br.com.alanryan.screen_match.models.Episode;
 import br.com.alanryan.screen_match.models.Movie;
 import br.com.alanryan.screen_match.models.Serie;
 import br.com.alanryan.screen_match.utils.Utils;
@@ -39,5 +41,14 @@ public class Main {
         calculator.includes(otherMovie);
         calculator.includes(lost);
         Utils.print(calculator.getTotalTime());
+
+        RecommendationFilter filter = new RecommendationFilter();
+        filter.filter(myMovie);
+
+        Episode episode = new Episode();
+        episode.setNumber(1);
+        episode.setSerie(lost);
+        episode.setTotalViews(300);
+        filter.filter(episode);
     }
 }
