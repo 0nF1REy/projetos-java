@@ -20,9 +20,11 @@ public class Title {
             durationInMinutes;
 
     // CONSTRUTOR
-    public Title() {
+    public Title(String title, int releaseYear) {
         this.id = UUID.randomUUID();
         this.publicId = publicIdCounter.incrementAndGet();
+        this.title = title;
+        this.releaseYear = releaseYear;
     }
 
     // Método para exibir informações (usuário final)
