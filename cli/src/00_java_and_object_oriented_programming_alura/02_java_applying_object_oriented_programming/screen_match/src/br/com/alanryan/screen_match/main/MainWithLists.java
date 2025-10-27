@@ -5,7 +5,7 @@ import br.com.alanryan.screen_match.models.Serie;
 import br.com.alanryan.screen_match.models.Title;
 import br.com.alanryan.screen_match.utils.Utils;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class MainWithLists {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class MainWithLists {
 
         Movie m1 = alanMovie;
 
-        ArrayList<Title> list = new ArrayList<>();
+        List<Title> list = new LinkedList<>();
         list.add(alanMovie);
         list.add(myMovie);
         list.add(otherMovie);
@@ -31,5 +31,21 @@ public class MainWithLists {
                 Utils.print("Classificação: " + movie.getClassification());
             }
         }
+
+        ArrayList<String> searchByArtist = new ArrayList<>();
+        searchByArtist.add("Layla");
+        searchByArtist.add("John");
+        searchByArtist.add("Adam Sandler");
+        Utils.print(searchByArtist);
+
+        Collections.sort(searchByArtist);
+        Utils.print("Depois da ordenação");
+        Utils.print(searchByArtist);
+        Utils.print("Lista de títulos ordenados");
+        Collections.sort(list);
+        Utils.print(list);
+        list.sort(Comparator.comparing(Title::getReleaseYear));
+        Utils.print("Ordenando por ano");
+        Utils.print(list);
     }
 }

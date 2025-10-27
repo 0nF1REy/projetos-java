@@ -4,7 +4,7 @@ import br.com.alanryan.screen_match.utils.Utils;
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Title {
+public class Title implements Comparable<Title> {
     // IDENTIFICAÇÃO
     private UUID id;
     private int publicId;
@@ -111,5 +111,10 @@ public class Title {
 
     public void setDurationInMinutes(int durationInMinutes) {
         this.durationInMinutes = durationInMinutes;
+    }
+
+    @Override
+    public int compareTo(Title otherTitle) {
+        return this.getTitle().compareTo(otherTitle.getTitle());
     }
 }
