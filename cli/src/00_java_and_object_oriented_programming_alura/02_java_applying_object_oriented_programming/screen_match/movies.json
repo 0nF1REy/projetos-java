@@ -1,0 +1,22 @@
+[
+  {
+    "PublicId": 0,
+    "Title": "Dogville",
+    "IncludedInPlan": false,
+    "Rating": 0.0,
+    "SumRatings": 0.0,
+    "ReleaseYear": 2003,
+    "TotalRatings": 0,
+    "DurationInMinutes": 17
+  },
+  {
+    "PublicId": 0,
+    "Title": "Batman",
+    "IncludedInPlan": false,
+    "Rating": 0.0,
+    "SumRatings": 0.0,
+    "ReleaseYear": 1989,
+    "TotalRatings": 0,
+    "DurationInMinutes": 12
+  }
+]

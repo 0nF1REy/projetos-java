@@ -1,5 +1,6 @@
 package br.com.alanryan.screen_match.models;
 
+import br.com.alanryan.screen_match.exception.YearConversionException;
 import br.com.alanryan.screen_match.utils.Utils;
 import com.google.gson.annotations.SerializedName;
 
@@ -34,6 +35,11 @@ public class Title implements Comparable<Title> {
 
     public Title(TitleOmdb myTitleOmdb) {
         this.title = myTitleOmdb.title();
+
+        if (myTitleOmdb.year().length() > 4) {
+            throw new YearConversionException("Não consegui converter o ano, " +
+                    "porque tem mais de 04 caracteres.");
+        }
         this.releaseYear = Integer.valueOf(myTitleOmdb.year());
         this.durationInMinutes = Integer.valueOf(myTitleOmdb.runtime().substring(0,2));
     }
@@ -131,8 +137,8 @@ public class Title implements Comparable<Title> {
 
     @Override
     public String toString() {
-        return "Titulo='" + title + '\'' +
-                ", Ano de lançamento=" + releaseYear + "," +
-                " Duração=" + durationInMinutes;
+        return "(Titulo = " + title +
+                ", Ano de lançamento = " + releaseYear + "," +
+                " Duração = " + durationInMinutes + ")";
     }
 }
