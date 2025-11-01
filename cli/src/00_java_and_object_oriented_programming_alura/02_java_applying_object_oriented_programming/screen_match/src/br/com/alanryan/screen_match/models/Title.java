@@ -1,10 +1,13 @@
 package br.com.alanryan.screen_match.models;
 
 import br.com.alanryan.screen_match.utils.Utils;
+import com.google.gson.annotations.SerializedName;
+
 import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class Title implements Comparable<Title> {
+
     // IDENTIFICAÇÃO
     private UUID id;
     private int publicId;
@@ -12,9 +15,11 @@ public class Title implements Comparable<Title> {
 
     // ATRIBUTOS encapsulados
     private String title;
+
     private boolean includedInPlan;
-    private double rating;
-    private double sumRatings;
+    private double rating,
+            sumRatings;
+
     private int releaseYear,
             totalRatings,
             durationInMinutes;
@@ -25,6 +30,12 @@ public class Title implements Comparable<Title> {
         this.publicId = publicIdCounter.incrementAndGet();
         this.title = title;
         this.releaseYear = releaseYear;
+    }
+
+    public Title(TitleOmdb myTitleOmdb) {
+        this.title = myTitleOmdb.title();
+        this.releaseYear = Integer.valueOf(myTitleOmdb.year());
+        this.durationInMinutes = Integer.valueOf(myTitleOmdb.runtime().substring(0,2));
     }
 
     // Método para exibir informações (usuário final)
@@ -116,5 +127,12 @@ public class Title implements Comparable<Title> {
     @Override
     public int compareTo(Title otherTitle) {
         return this.getTitle().compareTo(otherTitle.getTitle());
+    }
+
+    @Override
+    public String toString() {
+        return "Titulo='" + title + '\'' +
+                ", Ano de lançamento=" + releaseYear + "," +
+                " Duração=" + durationInMinutes;
     }
 }
