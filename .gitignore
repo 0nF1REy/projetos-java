@@ -76,5 +76,6 @@ Thumbs.db
 .env
 
 # Others
-mpj-v0_44
 apache-activemq-5.18.3
+javafx-sdk-25
+mpj-v0_44
