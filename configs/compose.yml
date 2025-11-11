@@ -6,7 +6,7 @@ services:
       args:
         GIT_USERNAME: ${GIT_USERNAME}
         GIT_EMAIL: ${GIT_EMAIL}
-    container_name: projetos_java
+    container_name: java-applications
     volumes:
       - .:/usr/src/app
     working_dir: /usr/src/app

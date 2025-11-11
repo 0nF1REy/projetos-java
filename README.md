@@ -102,7 +102,7 @@ java-applications/
 2. **Acesse o container:**
 
    ```bash
-   docker exec -it projetos_java bash
+   docker exec -it java-applications bash
    ```
 
 3. **Execute os projetos dentro do container:**
