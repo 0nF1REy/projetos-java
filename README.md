@@ -1,13 +1,12 @@
 <h1 align="center">
-  Projetos Java
+  Aplicações Java
 </h1>
 
 <div align="center">
 
-![Java](https://img.shields.io/badge/Java-21-orange)
-![Maven](https://img.shields.io/badge/Maven-3.x-blue)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.4.4-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge)
+![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
+![Status](https://img.shields.io/badge/status-completed-brightgreen?style=for-the-badge)
 
 </div>
 
@@ -208,7 +207,7 @@ Cada projeto contém:
     <td align="center">
         <br>
         <a href="https://github.com/0nF1REy" target="_blank">
-          <img src="./readme_images/alan-ryan.jpg" height="160" alt="Foto de Alan Ryan" style="border-radius:50%;border:3px solid #0077B5;">
+          <img src="./resources/images/docs/alan-ryan.jpg" height="160" alt="Foto de Alan Ryan">
         </a>
         </p>
         <a href="https://github.com/0nF1REy" target="_blank">
@@ -239,42 +238,12 @@ Cada projeto contém:
 
 ---
 
-## 📫 Contribuir <a name="contribuicao"></a>
-
-Contribuições são muito bem-vindas! Se você deseja contribuir com o projeto, por favor, siga estes passos:
-
-1.  **Faça um Fork** do repositório.
-
-2.  **Crie uma nova Branch** para sua feature ou correção:
-
-    ```bash
-    git checkout -b feature/nome-da-feature
-    ```
-
-3.  **Faça suas alterações** e realize o commit:
-
-    ```bash
-    git commit -m "feat: Adiciona nova feature"
-    ```
-
-4.  **Envie suas alterações** para o seu fork:
-
-    ```bash
-    git push origin feature/nome-da-feature
-    ```
-
-5.  **Abra um pull request** para a branch `main` do repositório original.
-
 ## 📚 Recursos Adicionais
 
 - [Documentação Oficial Java](https://docs.oracle.com/en/java/)
 - [Maven Getting Started](https://maven.apache.org/guides/getting-started/)
 - [Spring Boot Documentation](https://spring.io/projects/spring-boot)
 - [Docker Documentation](https://docs.docker.com/)
-
-- **<a href="https://www.atlassian.com/br/git/tutorials/making-a-pull-request" target="_blank">📝 Como criar um Pull Request</a>**
-
-- **<a href="https://www.conventionalcommits.org/en/v1.0.0/" target="_blank">💾 Padrão de Commits Convencionais</a>**
 
 ## 📜 Licença <a name="licenca"></a>
 
