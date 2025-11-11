@@ -75,5 +75,6 @@ Thumbs.db
 # Arquivo de variáveis de ambiente
 .env
 
-# MPJ
+# Others
 mpj-v0_44
+apache-activemq-5.18.3
