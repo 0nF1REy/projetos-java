@@ -40,19 +40,20 @@ Este repositório serve como um guia prático de aprendizado Java, organizado de
 ## 📁 Estrutura do Repositório
 
 ```
-projetos-java/
-├── compose.yml
-├── Dockerfile
+java-applications/
 ├── LICENSE
-├── public/
-│   └── assets/
-│       └── images/
-├── src/
-│   ├── 00_exercise_lists/
-│   ├── 01_hello_world/
-│   ├── 02_loop/
-│   ├── ...
-│   └── 49_copy_array_example/
+├── README.md
+├── configs/
+│   ├── compose.yml
+│   └── Dockerfile
+├── implementations/
+│   ├── cli/
+│   │   └── src/
+│   └── gui/
+│       └── src/java-fx/
+├── libs/
+├── resources/
+└── ...
 ```
 
 ## 🛠️ Pré-requisitos
