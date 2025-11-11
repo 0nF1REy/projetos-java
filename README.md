@@ -16,7 +16,7 @@
 - [Estrutura do Repositório](#estrutura-do-repositório)
 - [Pré-requisitos](#pré-requisitos)
 - [Como Executar](#como-executar)
-- [Projetos Incluídos](#projetos-incluídos)
+- [Aplicações Incluídas](#aplicações-incluídas)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
 - [Docker](#docker)
 - [Contribuição](#contribuição)
@@ -24,11 +24,11 @@
 
 ## 📖 Descrição
 
-Este repositório contém uma coleção abrangente de projetos Java que cobrem desde conceitos básicos até tópicos avançados da linguagem. É um recurso educacional para estudantes e desenvolvedores que desejam aprender ou revisar conceitos de Java.
+Este repositório reúne uma coleção prática e progressiva de projetos Java — do primeiro "Hello World" até aplicações que usam frameworks modernos. O objetivo é ensinar por meio do código: cada exemplo foi pensado para ser executável, comentado e fácil de entender, funcionando como um catálogo de exercícios, padrões e técnicas que você pode estudar, adaptar e reutilizar.
 
 ## 🎯 Sobre o Projeto
 
-Este repositório serve como um guia prático de aprendizado Java, organizado de forma progressiva do básico ao avançado. Cada projeto demonstra conceitos específicos da linguagem Java, incluindo:
+Este repositório serve como um guia prático de aprendizado Java. Cada projeto demonstra conceitos específicos da linguagem Java, incluindo:
 
 - Fundamentos da linguagem
 - Programação orientada a objetos
@@ -70,24 +70,24 @@ java-applications/
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/0nF1REy/projetos-java.git
-   cd projetos-java
+   git clone https://github.com/0nF1REy/java-applications.git
+   cd java-applications
    ```
 
 2. **Compile e execute um projeto específico:**
 
    ```bash
    # Para projetos simples (sem Maven)
-   cd src/01_hello_world
+   cd implementations/cli/src/01_hello_world/
    javac HelloWorld.java
    java HelloWorld
 
    # Para projetos com Maven
-   cd src/05_com_maven
+   cd implementations/cli/src/05_com_maven/
    mvn compile exec:java
 
    # Para projetos Spring Boot
-   cd src/26_first_spring_app
+   cd implementations/cli/src/26_first_spring_app/
    mvn spring-boot:run
    ```
 
@@ -107,12 +107,12 @@ java-applications/
 
 3. **Execute os projetos dentro do container:**
    ```bash
-   cd src/01_hello_world
+   cd implementations/cli/01_hello_world/
    javac HelloWorld.java
    java HelloWorld
    ```
 
-## 📚 Projetos Incluídos
+## 📚 Aplicações Incluídas
 
 ### Fundamentos Básicos (01-15)
 
@@ -151,13 +151,6 @@ java-applications/
 - **06_spring_maven_demo**: Demonstração Spring com Maven
 - **26_first_spring_app**: Primeira aplicação Spring Boot
 
-### Projetos Práticos
-
-- **16_calculator_with_wrappers**: Calculadora com classes wrapper
-- **32_greengrocer**: Sistema de hortifrúti
-- **36_clinica_veterinaria**: Sistema de clínica veterinária
-- **45_minha_calculadora**: Calculadora personalizada
-
 ## 🔧 Tecnologias Utilizadas
 
 - **Java 21**: Linguagem principal
@@ -180,24 +173,14 @@ O projeto inclui configuração Docker para facilitar o desenvolvimento:
 Configure as seguintes variáveis de ambiente para o Docker:
 
 ```bash
-export GIT_USERNAME="Seu Nome"
+export GIT_NAME="Seu Nome"
 export GIT_EMAIL="seu.email@exemplo.com"
 ```
 
-## 📖 Como Estudar
-
-1. **Comece pelos fundamentos**: Projetos 01-15
-2. **Avance para OOP**: Projetos 13-21
-3. **Explore estruturas de dados**: Projetos 20, 27, 41-43
-4. **Pratique conceitos avançados**: Projetos 08-11
-5. **Experimente frameworks**: Projetos 05, 06, 26
-
 Cada projeto contém:
 
-- Código fonte comentado
 - Exemplos práticos
 - Demonstração de conceitos específicos
-- Exercícios progressivos
 
 ## 👤 Sobre o Desenvolvedor
 
