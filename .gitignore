@@ -1,81 +1,78 @@
-# Diretórios e arquivos gerados automaticamente pelo NetBeans
+# =============================
+# IDEs and configuration files
+# =============================
 nbproject/private/
-build/
-dist/
-
-# Arquivos específicos do NetBeans que não precisam ser versionados
 nbproject/genfiles.properties
 nbproject/build-impl.xml
+nbproject/
+dist/
 
-# Arquivos de metadados do sistema
-*.swp
-*.swo
-
-# Arquivos compilados
-*.class
-
-# Arquivo de manifesto gerado
-manifest.mf
-
-# Arquivos compilados Java
-*.class
-
-# Arquivos empacotados (WAR, EAR, JAR)
-*.war
-*.ear
-*.jar
-!lib/*.jar
-
-# Diretórios de build
-/build/
-/target/
-out/
-**/out/
-/bin/
-
-# Arquivos de configuração da IDE
 .idea/
-.vscode/
 *.iml
 *.ipr
 *.iws
+
+.vscode/
+
 .classpath
 .project
 .settings/
 
-# Dependências do Maven
-/.m2/
+# =============================
+# Build and generated directories
+# =============================
+build/
+target/
+out/
+**/out/
+bin/
 
-# Dependências do Gradle
-/.gradle/
-/build/
+# =============================
+# Compiled and packaged files
+# =============================
+*.class
+manifest.mf
+*.war
+*.ear
+*.jar
+!libs/dependencies/gson/gson-2.13.2.jar
 
-# Arquivos de log
+# =============================
+# Dependencies
+# =============================
+.m2/
+.gradle/
+
+# =============================
+# Temporary files and logs
+# =============================
 *.log
-
-# Arquivos temporários
 *.tmp
 *.swp
 *.swo
 *.bak
 *.orig
 
-# Arquivos do sistema operacional
+# =============================
+# System files
+# =============================
 .DS_Store
 Thumbs.db
 
-# Arquivos do NetBeans
-/nbproject/
-/dist/
+# =============================
+# Test output
+# =============================
+test-output/
+reports/
 
-# Arquivos gerados por testes
-/test-output/
-/reports/
-
-# Arquivo de variáveis de ambiente
+# =============================
+# Environment variables
+# =============================
 .env
 
-# Others
-apache-activemq-5.18.3
-javafx-sdk-25
-mpj-v0_44
+# =============================
+# Large external libraries
+# =============================
+apache-activemq-5.18.3/
+javafx-sdk-25/
+mpj-v0_44/
