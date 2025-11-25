@@ -1,26 +1,17 @@
 <h1 align="center">
-  Aplicações Java
+  Java - Workspace
 </h1>
 
 <div align="center">
 
 ![Maintenance](https://img.shields.io/maintenance/yes/2025?style=for-the-badge)
 ![License MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/status-completed-brightgreen?style=for-the-badge)
 
 </div>
 
 ## 🧭 Guia de Navegação (Índice)
 
-- [Sobre o Projeto](#sobre-o-projeto)
-- [Estrutura do Repositório](#estrutura-do-repositório)
-- [Pré-requisitos](#pré-requisitos)
-- [Como Executar](#como-executar)
-- [Aplicações Incluídas](#aplicações-incluídas)
-- [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Docker](#docker)
-- [Contribuição](#contribuição)
-- [Licença](#licença)
+- **[Licença](#licenca)**
 
 ## 📖 Descrição
 
@@ -34,153 +25,45 @@ Este repositório serve como um guia prático de aprendizado Java. Cada projeto 
 - Programação orientada a objetos
 - Estruturas de dados
 - Concorrência e multithreading
-- Frameworks como Spring Boot
 - Boas práticas de desenvolvimento
 
 ## 📁 Estrutura do Repositório
 
-```
-java-applications/
-├── LICENSE
-├── README.md
-├── configs/
-│   ├── compose.yml
-│   └── Dockerfile
-├── implementations/
-│   ├── cli/
-│   │   └── src/
-│   └── gui/
-│       └── src/java-fx/
+```bash
+.
 ├── libs/
+├── modules/
 ├── resources/
-└── ...
+├── .gitignore
+├── LICENSE
+└── README.md
 ```
-
-## 🛠️ Pré-requisitos
-
-- **Java 21** ou superior
-- **Maven 3.x** (para projetos que utilizam Maven)
-- **Docker** (opcional, para ambiente containerizado)
-- **Git** para clonar o repositório
 
 ## 🚀 Como Executar
-
-### Execução Local
 
 1. **Clone o repositório:**
 
    ```bash
-   git clone https://github.com/0nF1REy/java-applications.git
-   cd java-applications
+   git clone https://github.com/0nF1REy/java-workspace.git
+   cd java-workspace
    ```
 
 2. **Compile e execute um projeto específico:**
 
    ```bash
    # Para projetos simples (sem Maven)
-   cd implementations/cli/src/01_hello_world/
+   cd modules/cli/src/01_hello_world/
    javac HelloWorld.java
    java HelloWorld
 
    # Para projetos com Maven
-   cd implementations/cli/src/05_com_maven/
+   cd modules/cli/src/01_hello_world/
    mvn compile exec:java
 
    # Para projetos Spring Boot
-   cd implementations/cli/src/26_first_spring_app/
+   cd modules/cli/src/01_hello_world/
    mvn spring-boot:run
    ```
-
-### Execução com Docker
-
-1. **Execute o ambiente Docker:**
-
-   ```bash
-   docker-compose up -d
-   ```
-
-2. **Acesse o container:**
-
-   ```bash
-   docker exec -it java-applications bash
-   ```
-
-3. **Execute os projetos dentro do container:**
-   ```bash
-   cd implementations/cli/01_hello_world/
-   javac HelloWorld.java
-   java HelloWorld
-   ```
-
-## 📚 Aplicações Incluídas
-
-### Fundamentos Básicos (01-15)
-
-- **01_hello_world**: Primeiro programa Java com conceitos básicos
-- **02_loop**: Estruturas de repetição (for, while)
-- **03_condicional**: Estruturas condicionais (if, else, switch)
-- **12_metodos**: Definição e uso de métodos
-- **15_primitive_types**: Tipos primitivos em Java
-
-### Orientação a Objetos (13-21)
-
-- **13_gato**: Exemplo básico de classe e objetos
-- **14_package**: Organização em pacotes
-- **17_polymorphism_cafe**: Demonstração de polimorfismo
-- **18_static_attribute_and_constant**: Atributos estáticos e constantes
-- **21_static_heroes_class_object**: Classes e objetos estáticos
-
-### Estruturas de Dados (20, 27, 41-43)
-
-- **20_arrays_basics**: Fundamentos de arrays
-- **27_fixed_capacity_array**: Arrays de capacidade fixa
-- **41_arrays**: Manipulação avançada de arrays
-- **42_matrizes**: Matrizes multidimensionais
-- **43_for_each**: Loop for-each
-
-### Programação Avançada (08-11)
-
-- **08_array_list_stream**: ArrayList e Streams
-- **09_concurrent_task_coordinator**: Coordenação de tarefas concorrentes
-- **10_asynchronous_pokemon_ability_fetcher**: Programação assíncrona
-- **11_multi_thread_musician_performance**: Multithreading
-
-### Frameworks e Ferramentas
-
-- **05_com_maven**: Projeto usando Maven
-- **06_spring_maven_demo**: Demonstração Spring com Maven
-- **26_first_spring_app**: Primeira aplicação Spring Boot
-
-## 🔧 Tecnologias Utilizadas
-
-- **Java 21**: Linguagem principal
-- **Maven**: Gerenciamento de dependências e build
-- **Spring Boot 3.4.4**: Framework para aplicações web
-- **Docker**: Containerização do ambiente de desenvolvimento
-- **Gson**: Biblioteca para manipulação JSON
-
-## 🐳 Docker
-
-O projeto inclui configuração Docker para facilitar o desenvolvimento:
-
-- **Dockerfile**: Baseado no Eclipse Temurin 21 com Maven e Git
-- **compose.yml**: Configuração Docker Compose para desenvolvimento
-- Volumes mapeados para desenvolvimento em tempo real
-- Configuração automática do Git dentro do container
-
-### Variáveis de Ambiente Docker
-
-Configure as seguintes variáveis de ambiente para o Docker:
-
-```bash
-export GIT_NAME="Seu Nome"
-export GIT_EMAIL="seu.email@exemplo.com"
-```
-
-Cada projeto contém:
-
-- Exemplos práticos
-- Demonstração de conceitos específicos
 
 ## 👤 Sobre o Desenvolvedor
 
@@ -225,9 +108,6 @@ Cada projeto contém:
 ## 📚 Recursos Adicionais
 
 - [Documentação Oficial Java](https://docs.oracle.com/en/java/)
-- [Maven Getting Started](https://maven.apache.org/guides/getting-started/)
-- [Spring Boot Documentation](https://spring.io/projects/spring-boot)
-- [Docker Documentation](https://docs.docker.com/)
 
 ## 📜 Licença <a name="licenca"></a>
 
