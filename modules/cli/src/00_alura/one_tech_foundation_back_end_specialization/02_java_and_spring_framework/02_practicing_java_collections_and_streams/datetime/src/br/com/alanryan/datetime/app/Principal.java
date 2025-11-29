@@ -15,6 +15,8 @@ public class Principal {
         app.demoMap();
         System.out.println("- - -");
         app.demoVendas();
+        System.out.println("- - -");
+        app.demoNotas();
     }
 
     // Demonstração de List
@@ -77,5 +79,28 @@ public class Principal {
                 .sum();
 
         System.out.println("Total de vendas: " + totalVendas);
+    }
+
+    // Demonstração de cálculo de média, menor e maior nota
+    private void demoNotas() {
+        List<Double> notas = List.of(7.5, 8.0, 6.5, 9.0, 10.0);
+
+        // Soma total usando reduce
+        double soma = notas.stream()
+                .reduce(0.0, Double::sum);
+
+        // Cálculo da média
+        double media = soma / notas.size();
+
+        // Menor e maior nota
+        double menorNota = notas.stream().min(Double::compare).orElse(0.0);
+        double maiorNota = notas.stream().max(Double::compare).orElse(0.0);
+
+        // Exibição
+        System.out.println("Notas dos alunos:");
+        System.out.println(notas);
+        System.out.println("A média das notas é: " + media);
+        System.out.println("A menor nota foi: " + menorNota);
+        System.out.println("A maior nota foi: " + maiorNota);
     }
 }
